@@ -1,0 +1,11 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "Live Preview",
+			"workspacePath": "c:\\Users\\shubh\\OneDrive\\Desktop\\project\\New folder detection",
+			"problemMatcher": [],
+			"label": "Live Preview: Run Server"
+		}
+	]
+}

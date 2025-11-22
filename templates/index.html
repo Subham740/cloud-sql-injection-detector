@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="p-4 bg-light rounded-3">
+    <h1>Detecting Data Leaks using SQL Injection</h1>
+    <p class="lead">
+        This demo project shows how to detect SQL Injection attempts that may lead to
+        data leaks in a cloud-based web application.
+    </p>
+    <hr>
+    <p>
+        Use the <strong>Search</strong> page to try normal queries and also SQL injection
+        payloads like:
+    </p>
+    <ul>
+        <li><code>admin' OR '1'='1</code></li>
+        <li><code>1; DROP TABLE users;--</code></li>
+        <li><code>' UNION SELECT username, password FROM users --</code></li>
+    </ul>
+    <p>
+        Check the <strong>Logs</strong> page to see how suspicious activities are detected
+        and recorded.
+    </p>
+</div>
+{% endblock %}
